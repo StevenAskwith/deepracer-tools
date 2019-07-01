@@ -7,6 +7,7 @@ closest_waypoints = params['closest_waypoints']
 track_width = params['track_width']
 steering_angle = params['steering_angle']
 steps = params['steps']
+waypoints = params['waypoints']
 ```
 
 Then add the following at the end of your model, it will add the extra logging required to generate the circuit layout on the heatmap
@@ -15,10 +16,12 @@ Then add the following at the end of your model, it will add the extra logging r
 import math 
 coord0 = waypoints[closest_waypoints[0]]
 coord1 = waypoints[closest_waypoints[1]]
-myradians = math.atan2(coord1[1]-coord0[1], coord1[0]-coord0[0]) #(y,x i.e opposite/adjacent)
+myradians = math.atan2(coord1[1]-coord0[1], coord1[0]-coord0[0])
 mydegrees = math.degrees(myradians)
 print("Waypoint0:{},X:{},Y:{},heading:{},trackwidth:{},steeringangle:{},steps:{}".format(closest_waypoints[0],coord0[0],coord0[1],mydegrees,track_width,steering_angle,steps))
 ```
+
+An example model is [here](examples/test_model.py)
 
 ## Python Modules
 Install [matplotlib](https://matplotlib.org/3.1.0/faq/installing_faq.html) 
