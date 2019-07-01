@@ -35,5 +35,5 @@ python3 Get-DeepRacerHeatMap.py --profile <yourprofile> --logstreamname sim-nd2x
 ```
 
 ![](./examples/kumo_torakku.png "Kumo Torakku")
-
+![](./examples/empire_city.png "Empire City")
 
