@@ -37,6 +37,7 @@ Now generate a heatmap by running the script
 python3 Get-DeepRacerHeatMap.py --profile <yourprofile> --logstreamname sim-nd2x4c3ph1d3/2019-06-05T14-39-30.940Z_3f5ddea9-6535-45d0-b1c7-ceb4b054f884/SimulationApplicationLogs
 ```
 
+![](./examples/london_loop.png "London Loop")
 ![](./examples/kumo_torakku.png "Kumo Torakku")
 ![](./examples/empire_city.png "Empire City")
 
